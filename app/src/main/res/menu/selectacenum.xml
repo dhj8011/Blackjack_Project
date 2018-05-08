@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checked="true"
+        android:title="Ace to 11"
+        android:id="@+id/eleven"
+        />
+    <item
+        android:title="Ace to 1"
+        android:id="@+id/one"
+        />
+
+
+
+
+</menu>

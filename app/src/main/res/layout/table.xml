@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2eb82e">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dealer"
+        android:text="Dealer"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/dcard1"
+            android:onClick="cardopen"
+
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@id/dcard1"
+            android:id="@+id/dcard2"
+            android:onClick="cardopen"
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/dcard1"
+            android:id="@+id/pcard1"
+            android:layout_marginLeft="25dp"
+            android:onClick="cardopen"
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@id/pcard1"
+            android:id="@+id/pcard2"
+            android:layout_below="@id/dcard2"
+            android:onClick="cardopen"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/player"
+            android:text="Player"
+            android:layout_below="@id/pcard1"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stay"
+            android:layout_toRightOf="@id/pcard2"
+            android:layout_below="@id/dcard2"
+            android:text="Stay"
+            android:onClick="gameset"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/surrender"
+            android:layout_toRightOf="@id/pcard2"
+            android:layout_below="@id/stay"
+            android:layout_alignBaseline="@id/pcard2"
+            android:text="Surrender"
+            android:textSize="12dp"
+            android:onClick="gameset"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
